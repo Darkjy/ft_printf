@@ -6,7 +6,7 @@
 #    By: jucoppa <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/13 19:31:10 by jucoppa           #+#    #+#              #
-#    Updated: 2017/12/02 07:55:51 by jucoppa          ###   ########.fr        #
+#    Updated: 2017/12/18 19:37:44 by jucoppa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ PRINTF_SRC	=	check_conv.c check_list.c ft_printf.c\
 				space_x.c ft_itoa_base.c print_fct_chars.c\
 				print_fct_wchars.c wchar_set.c
 
+LIB_DIR		=	./libft/
 LIB_NAME	=	ft_atoi.c ft_bzero.c ft_div_mod.c ft_exit.c ft_isalnum.c\
 				ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\
 				ft_itoa.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c\
@@ -39,7 +40,7 @@ LIB_NAME	=	ft_atoi.c ft_bzero.c ft_div_mod.c ft_exit.c ft_isalnum.c\
 				ft_strdup_nfree.c
 
 PRINTF_NAME =	$(addprefix $(PRINTF_DIR), $(PRINTF_SRC))
-LIB_OBJ		=	$(LIB_NAME:.c=.o)
+LIB_OBJ		=	$(addprefix $(LIB_DIR), $(LIB_NAME:.c=.o))
 PRINTF_OBJ	=	$(PRINTF_NAME:.c=.o)
 
 OBJ			=	$(LIB_OBJ) $(PRINTF_OBJ)

@@ -6,14 +6,14 @@
 /*   By: jucoppa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/03 20:16:59 by jucoppa           #+#    #+#             */
-/*   Updated: 2017/12/02 05:27:35 by jucoppa          ###   ########.fr       */
+/*   Updated: 2017/12/18 19:39:25 by jucoppa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft.h"
+# include "../libft/libft.h"
 
 typedef enum		e_size
 {
